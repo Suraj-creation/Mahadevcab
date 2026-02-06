@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     `👥 Passengers: ${passengers}\n\n` +
                     `Please confirm availability and fare.`;
 
-                const whatsappURL = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+                const whatsappURL = `https://wa.me/918585973335?text=${encodeURIComponent(message)}`;
                 window.open(whatsappURL, '_blank');
             }
         });
