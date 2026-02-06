@@ -3,7 +3,7 @@
    ============================================= */
 
 const AUTH_CONFIG = {
-    clientId: '370035796364-2f2klhpiesl0d3emg3kvdsrv484adsm.apps.googleusercontent.com',
+    clientId: '370035796364-2f2klhpiesel0d3emg3kvdsrv484adsm.apps.googleusercontent.com',
     storageKey: 'bstravel_user'
 };
 
