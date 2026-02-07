@@ -34,6 +34,16 @@ All images go into `assets/images/`. Below is the exact filename and description
 | `pkg-vrindavan-mathura.jpg` | Vrindavan temple / Krishna temple | 800×500 |
 
 ## WHY CHOOSE US
+
+## ONE-WAY DROP PACKAGES
+| Filename | Description | Recommended Size |
+|---|---|---|
+| `oneway-delhi-agra.jpg` | Taj Mahal or Agra Fort — Delhi to Agra route | 800×400 |
+| `oneway-delhi-jaipur.jpg` | Hawa Mahal or Jaipur cityscape — Delhi to Jaipur route | 800×400 |
+| `oneway-delhi-haridwar.jpg` | Har Ki Pauri or Ganga Aarti — Delhi to Haridwar route | 800×400 |
+| `oneway-delhi-rishikesh.jpg` | Lakshman Jhula or Ganges riverside — Delhi to Rishikesh route | 800×400 |
+| `oneway-delhi-punjab.jpg` | Golden Temple or Punjab fields — Delhi to Punjab route | 800×400 |
+| `oneway-punjab-delhi.jpg` | IGI Airport or Delhi skyline — Punjab to Delhi Airport route | 800×400 |
 | Filename | Description | Recommended Size |
 |---|---|---|
 | `why-us-bg-landmarks.jpg` | Faded Delhi landmarks watermark (subtle, used at 3% opacity) | 1920×800 |
@@ -54,7 +64,7 @@ All images go into `assets/images/`. Below is the exact filename and description
 
 ---
 
-**Total: 20 images to upload**
+**Total: 26 images to upload**
 
 ### Tips
 - Use **high-quality, compressed** images (JPEG quality 80-85% recommended)
