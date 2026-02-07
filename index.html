@@ -189,76 +189,7 @@
     </section>
 
     <!-- ============================================
-         SECTION 3: QUICK BOOKING FORM
-    ============================================= -->
-    <section class="booking" id="booking">
-        <div class="booking__bg-shapes">
-            <div class="booking__shape booking__shape--1"></div>
-            <div class="booking__shape booking__shape--2"></div>
-        </div>
-        <div class="container">
-            <div class="section-header section-header--center">
-                <span class="section-tag glass-tag">Quick Booking</span>
-                <h2 class="section-title">Get Your <span class="text-gradient">Instant Quote</span></h2>
-                <p class="section-desc">Fill in your travel details and get a fare estimate in seconds</p>
-            </div>
-
-            <form class="booking__form clay-card" id="bookingForm">
-                <div class="booking__form-grid">
-                    <div class="booking__field">
-                        <label class="booking__label"><i class="fas fa-map-marker-alt"></i> Pickup Location</label>
-                        <input type="text" class="booking__input glass-input" placeholder="e.g., Delhi Airport, Hotel name..." required>
-                    </div>
-                    <div class="booking__field">
-                        <label class="booking__label"><i class="fas fa-map-pin"></i> Drop / Destination</label>
-                        <input type="text" class="booking__input glass-input" placeholder="e.g., Taj Mahal, Jaipur..." required>
-                    </div>
-                    <div class="booking__field">
-                        <label class="booking__label"><i class="fas fa-calendar-alt"></i> Travel Date</label>
-                        <input type="date" class="booking__input glass-input" required>
-                    </div>
-                    <div class="booking__field">
-                        <label class="booking__label"><i class="fas fa-clock"></i> Pickup Time</label>
-                        <input type="time" class="booking__input glass-input" required>
-                    </div>
-                    <div class="booking__field">
-                        <label class="booking__label"><i class="fas fa-car"></i> Car Type</label>
-                        <select class="booking__input glass-input booking__select">
-                            <option value="">Select Vehicle</option>
-                            <option value="dzire">Maruti Dzire (4 Seater)</option>
-                            <option value="ertiga">Maruti Ertiga (6-7 Seater)</option>
-                            <option value="crysta">Toyota Crysta (6-7 Seater)</option>
-                        </select>
-                    </div>
-                    <div class="booking__field">
-                        <label class="booking__label"><i class="fas fa-users"></i> Passengers</label>
-                        <select class="booking__input glass-input booking__select">
-                            <option value="1">1 Passenger</option>
-                            <option value="2">2 Passengers</option>
-                            <option value="3">3 Passengers</option>
-                            <option value="4" selected>4 Passengers</option>
-                            <option value="5">5 Passengers</option>
-                            <option value="6">6 Passengers</option>
-                            <option value="7">7 Passengers</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="booking__form-footer">
-                    <div class="booking__estimate glass-card-sm">
-                        <i class="fas fa-info-circle"></i>
-                        <span>Estimated Fare: <strong id="fareEstimate">Select details above</strong></span>
-                    </div>
-                    <button type="submit" class="btn btn--primary btn--lg btn--glow">
-                        <i class="fas fa-paper-plane"></i>
-                        Get Instant Quote
-                    </button>
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- ============================================
-         SECTION 4: SERVICE TYPES
+         SECTION 3: SERVICE TYPES
     ============================================= -->
     <section class="services" id="services">
         <div class="services__bg-pattern"></div>
@@ -357,6 +288,75 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: QUICK BOOKING FORM
+    ============================================= -->
+    <section class="booking" id="booking">
+        <div class="booking__bg-shapes">
+            <div class="booking__shape booking__shape--1"></div>
+            <div class="booking__shape booking__shape--2"></div>
+        </div>
+        <div class="container">
+            <div class="section-header section-header--center">
+                <span class="section-tag glass-tag">Quick Booking</span>
+                <h2 class="section-title">Get Your <span class="text-gradient">Instant Quote</span></h2>
+                <p class="section-desc">Fill in your travel details and get a fare estimate in seconds</p>
+            </div>
+
+            <form class="booking__form clay-card" id="bookingForm">
+                <div class="booking__form-grid">
+                    <div class="booking__field">
+                        <label class="booking__label"><i class="fas fa-map-marker-alt"></i> Pickup Location</label>
+                        <input type="text" class="booking__input glass-input" placeholder="e.g., Delhi Airport, Hotel name..." required>
+                    </div>
+                    <div class="booking__field">
+                        <label class="booking__label"><i class="fas fa-map-pin"></i> Drop / Destination</label>
+                        <input type="text" class="booking__input glass-input" placeholder="e.g., Taj Mahal, Jaipur..." required>
+                    </div>
+                    <div class="booking__field">
+                        <label class="booking__label"><i class="fas fa-calendar-alt"></i> Travel Date</label>
+                        <input type="date" class="booking__input glass-input" required>
+                    </div>
+                    <div class="booking__field">
+                        <label class="booking__label"><i class="fas fa-clock"></i> Pickup Time</label>
+                        <input type="time" class="booking__input glass-input" required>
+                    </div>
+                    <div class="booking__field">
+                        <label class="booking__label"><i class="fas fa-car"></i> Car Type</label>
+                        <select class="booking__input glass-input booking__select">
+                            <option value="">Select Vehicle</option>
+                            <option value="dzire">Maruti Dzire (4 Seater)</option>
+                            <option value="ertiga">Maruti Ertiga (6-7 Seater)</option>
+                            <option value="crysta">Toyota Crysta (6-7 Seater)</option>
+                        </select>
+                    </div>
+                    <div class="booking__field">
+                        <label class="booking__label"><i class="fas fa-users"></i> Passengers</label>
+                        <select class="booking__input glass-input booking__select">
+                            <option value="1">1 Passenger</option>
+                            <option value="2">2 Passengers</option>
+                            <option value="3">3 Passengers</option>
+                            <option value="4" selected>4 Passengers</option>
+                            <option value="5">5 Passengers</option>
+                            <option value="6">6 Passengers</option>
+                            <option value="7">7 Passengers</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="booking__form-footer">
+                    <div class="booking__estimate glass-card-sm">
+                        <i class="fas fa-info-circle"></i>
+                        <span>Estimated Fare: <strong id="fareEstimate">Select details above</strong></span>
+                    </div>
+                    <button type="submit" class="btn btn--primary btn--lg btn--glow">
+                        <i class="fas fa-paper-plane"></i>
+                        Get Instant Quote
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -1240,6 +1240,12 @@
                         </div>
                     </div>
                     <p class="footer__made">Made with <i class="fas fa-heart"></i> in India</p>
+                </div>
+                <!-- Admin Access -->
+                <div class="footer__admin">
+                    <a href="/admin" class="footer__admin-link" title="Admin Portal">
+                        <i class="fas fa-lock"></i> Admin
+                    </a>
                 </div>
             </div>
         </div>

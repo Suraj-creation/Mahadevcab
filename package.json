@@ -1,0 +1,22 @@
+{
+  "name": "mahadevcab",
+  "version": "1.0.0",
+  "description": "Mahadev Tour and Travel - Delhi's Most Trusted Cab Service",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": ["cab", "travel", "delhi", "tour"],
+  "author": "Mahadev Tour and Travel",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
