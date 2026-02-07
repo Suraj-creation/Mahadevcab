@@ -530,7 +530,7 @@ function editPackage(id) {
 // Toggle Package Status
 async function togglePackage(id) {
     try {
-        const response = await fetch(`${API_BASE}/packages/${id}/toggle`, {
+        const response = await fetch(`${API_BASE}/packages/${id}`, {
             method: 'PATCH'
         });
         

@@ -1,6 +1,11 @@
 {
   "rewrites": [
-    { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/api/(.*)", "destination": "/api/$1" }
-  ]
+    { "source": "/admin", "destination": "/admin.html" }
+  ],
+  "functions": {
+    "api/**/*.js": {
+      "memory": 256,
+      "maxDuration": 10
+    }
+  }
 }
