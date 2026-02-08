@@ -3904,6 +3904,385 @@ input, select, textarea {
 
 
 /* ═══════════════════════════════════════════════
+   RESPONSIVE — MOBILE POLISH & ENHANCEMENTS
+   ═══════════════════════════════════════════════ */
+
+/* --- Mobile Nav Overlay & Hamburger Fix (max 1024px) --- */
+@media (max-width: 1024px) {
+    /* Dark backdrop when mobile nav is open */
+    .header__nav.open {
+        box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Keep hamburger clickable above nav overlay */
+    .header__hamburger {
+        position: relative;
+        z-index: 510;
+    }
+
+    /* Reduce section header spacing for tablet */
+    .section-header {
+        margin-bottom: 40px;
+    }
+
+    /* Proportional card image heights — tablet */
+    .services__card-img-wrap {
+        height: 200px;
+    }
+
+    .packages__card-img-wrap {
+        height: 220px;
+    }
+
+    .oneway__card-img-wrap {
+        height: 140px;
+    }
+
+    /* Fleet comparison table — tablet */
+    .fleet__comparison {
+        padding: 28px 20px;
+    }
+
+    .fleet__comparison-table th,
+    .fleet__comparison-table td {
+        padding: 12px 14px;
+    }
+}
+
+/* --- Mobile Enhancements (max 768px) --- */
+@media (max-width: 768px) {
+    /* Header mobile sizing */
+    .header__container {
+        padding: 0 16px;
+    }
+
+    .header__logo-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header__logo-name {
+        font-size: 0.95rem;
+    }
+
+    .header__logo-tagline {
+        font-size: 0.6rem;
+    }
+
+    /* Section spacing tighter */
+    .section-header {
+        margin-bottom: 32px;
+    }
+
+    .section-desc {
+        font-size: 1rem;
+    }
+
+    /* Card image heights — mobile proportional */
+    .services__card-img-wrap {
+        height: 180px;
+    }
+
+    .packages__card-img-wrap {
+        height: 200px;
+    }
+
+    /* Packages mobile polish */
+    .packages__card-body {
+        padding: 22px;
+    }
+
+    .packages__card-title {
+        font-size: 1.15rem;
+    }
+
+    /* One-way cards mobile */
+    .oneway__card-body {
+        padding: 16px 18px 20px;
+    }
+
+    .oneway__card-title {
+        font-size: 1rem;
+    }
+
+    /* Fleet cards mobile */
+    .fleet__card-body {
+        padding: 22px;
+    }
+
+    .fleet__card-name {
+        font-size: 1.2rem;
+    }
+
+    .fleet__price-value {
+        font-size: 1.3rem;
+    }
+
+    /* Why-us cards mobile */
+    .why-us__card {
+        padding: 24px 20px;
+    }
+
+    /* How it works mobile */
+    .how-it-works__timeline {
+        margin-bottom: 32px;
+    }
+
+    .how-it-works__step {
+        padding: 20px 0;
+    }
+
+    /* Reviews mobile */
+    .reviews__card {
+        padding: 24px;
+    }
+
+    /* CTA mobile */
+    .final-cta__title {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+
+    .final-cta__subtitle {
+        font-size: 1rem;
+    }
+
+    /* Footer mobile */
+    .footer__grid {
+        padding-top: 80px;
+    }
+
+    /* Booking button full-width on mobile */
+    .booking__form-footer .btn {
+        width: 100%;
+    }
+
+    .booking__estimate {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Toast notification mobile */
+    .auth-toast {
+        top: 80px;
+        right: 16px;
+        left: 16px;
+    }
+
+    .auth-toast__content {
+        font-size: var(--fs-xs);
+        padding: 12px 16px;
+    }
+}
+
+/* --- Small Mobile Enhancements (max 480px) --- */
+@media (max-width: 480px) {
+    /* Header ultra-compact */
+    .header__container {
+        padding: 0 12px;
+        gap: 8px;
+    }
+
+    .header__logo-icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    .header__logo-name {
+        font-size: 0.85rem;
+    }
+
+    .header__logo-tagline {
+        display: none;
+    }
+
+    .header__phone {
+        padding: 8px;
+    }
+
+    .header__cta {
+        padding: 8px 14px;
+        font-size: 0.75rem;
+    }
+
+    /* Hero adjustments */
+    .hero {
+        padding-bottom: 40px;
+    }
+
+    .hero__badge {
+        font-size: var(--fs-xs);
+        padding: 8px 16px;
+    }
+
+    .hero__subtitle {
+        font-size: 0.95rem;
+    }
+
+    /* Booking form compact */
+    .booking__form {
+        padding: 20px 16px;
+    }
+
+    /* Service cards compact */
+    .services__card-body {
+        padding: 20px;
+    }
+
+    .services__card-img-wrap {
+        height: 160px;
+    }
+
+    /* Packages compact */
+    .packages__card-img-wrap {
+        height: 180px;
+    }
+
+    .packages__itinerary {
+        padding: 14px;
+    }
+
+    .packages__card-meta {
+        gap: 8px;
+    }
+
+    /* One-way compact */
+    .oneway__card-img-wrap {
+        height: 120px;
+    }
+
+    .oneway__price-amount {
+        font-size: 1.2rem;
+    }
+
+    /* Why-us compact */
+    .why-us__card {
+        padding: 20px 16px;
+    }
+
+    .why-us__card-title {
+        font-size: 1.05rem;
+    }
+
+    /* How it works compact */
+    .how-it-works__step-icon {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+    }
+
+    .how-it-works__step-icon i {
+        font-size: 0.95rem;
+    }
+
+    .how-it-works__step-number {
+        font-size: 0.6rem;
+    }
+
+    .how-it-works__step {
+        gap: 16px;
+    }
+
+    .how-it-works__connector {
+        left: 23px;
+    }
+
+    .how-it-works__step-content h3 {
+        font-size: 1.05rem;
+    }
+
+    /* Reviews compact */
+    .reviews__agg-value {
+        font-size: 1.8rem;
+    }
+
+    .reviews__agg-item {
+        padding: 0 24px;
+    }
+
+    .reviews__card {
+        padding: 20px;
+    }
+
+    .reviews__card-text {
+        font-size: var(--fs-sm);
+    }
+
+    .reviews__card-badge {
+        display: none;
+    }
+
+    /* FAQ compact */
+    .faq__contact-box {
+        padding: 20px;
+    }
+
+    .faq__contact-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* CTA compact */
+    .final-cta__content {
+        padding: 36px 20px;
+    }
+
+    .final-cta__subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* Footer compact */
+    .footer__about {
+        font-size: var(--fs-xs);
+    }
+
+    .footer__grid {
+        padding-top: 70px;
+        gap: 32px;
+    }
+
+    .footer__bottom-content {
+        font-size: var(--fs-xs);
+    }
+}
+
+/* --- Extra Small Devices (max 360px) --- */
+@media (max-width: 360px) {
+    /* Header: CTA becomes icon-only circle */
+    .header__cta {
+        padding: 8px;
+        border-radius: 50%;
+        min-width: 36px;
+        min-height: 36px;
+    }
+
+    /* Smaller hero text */
+    .hero__title {
+        font-size: 1.5rem;
+    }
+
+    .hero__stat {
+        padding: 0 16px;
+    }
+
+    .hero__stat-number {
+        font-size: 1.5rem;
+    }
+
+    /* Smaller section titles */
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    /* Compact buttons */
+    .btn--hero,
+    .btn--xl {
+        padding: 14px 24px;
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ═══════════════════════════════════════════════
    LOADING / SKELETON STATES
    ═══════════════════════════════════════════════ */
 .skeleton {
