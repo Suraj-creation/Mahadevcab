@@ -592,13 +592,13 @@ input, select, textarea {
 }
 
 .header__container {
-    max-width: var(--container-max);
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 var(--container-px);
+    padding: 0 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
+    gap: 16px;
 }
 
 /* Logo */
@@ -612,17 +612,12 @@ input, select, textarea {
 .header__logo-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-dark));
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--clr-white);
-    font-size: 1.3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
     box-shadow:
         0 4px 12px var(--clr-primary-200),
-        inset 0 1px 0 rgba(255,255,255,0.2),
-        inset 0 -2px 0 rgba(0,0,0,0.1);
+        inset 0 1px 0 rgba(255,255,255,0.2);
     transition: var(--transition-spring);
 }
 
@@ -634,9 +629,10 @@ input, select, textarea {
     display: block;
     font-family: var(--ff-primary);
     font-weight: 800;
-    font-size: 1.3rem;
-    color: #ffffff;
+    font-size: 1.1rem;
+    color: var(--clr-primary);
     line-height: 1.2;
+    white-space: nowrap;
 }
 
 .header__logo-tagline {
@@ -659,7 +655,7 @@ input, select, textarea {
 .header__nav-list {
     display: flex;
     align-items: center;
-    gap: 2px;
+    gap: 0;
     flex-wrap: nowrap;
     list-style: none;
     margin: 0;
@@ -668,10 +664,10 @@ input, select, textarea {
 
 .header__nav-link {
     font-family: var(--ff-primary);
-    font-size: var(--fs-sm);
+    font-size: 0.85rem;
     font-weight: 500;
     color: var(--clr-dark-600);
-    padding: 8px 12px;
+    padding: 6px 10px;
     border-radius: var(--radius-pill);
     transition: var(--transition-fast);
     position: relative;
@@ -692,7 +688,7 @@ input, select, textarea {
 .header__actions {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     flex-shrink: 0;
     white-space: nowrap;
 }
@@ -700,11 +696,11 @@ input, select, textarea {
 .header__phone {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     color: var(--clr-dark-600);
     font-weight: 500;
-    font-size: var(--fs-sm);
-    padding: 8px 16px;
+    font-size: 0.82rem;
+    padding: 6px 12px;
     border-radius: var(--radius-pill);
     background: var(--clr-primary-50);
     transition: var(--transition-fast);
@@ -780,8 +776,8 @@ input, select, textarea {
 .auth__signin-btn {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 18px;
+    gap: 6px;
+    padding: 6px 14px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 50px;
     background: rgba(255, 255, 255, 0.07);
@@ -789,7 +785,7 @@ input, select, textarea {
     -webkit-backdrop-filter: blur(12px);
     color: var(--clr-white);
     font-family: var(--ff-secondary);
-    font-size: var(--fs-sm);
+    font-size: 0.82rem;
     font-weight: 500;
     cursor: pointer;
     transition: var(--transition-base);
@@ -3119,20 +3115,16 @@ input, select, textarea {
 .footer__logo-icon {
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, var(--clr-primary), var(--clr-primary-dark));
-    border-radius: var(--radius-md);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--clr-white);
-    font-size: 1.3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
 }
 
 .footer__logo-name {
     font-family: var(--ff-primary);
     font-weight: 800;
     font-size: 1.3rem;
-    color: var(--clr-white);
+    color: var(--clr-primary);
     display: block;
     line-height: 1.2;
 }
